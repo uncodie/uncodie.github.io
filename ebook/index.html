@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ebook Reader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap v4.5.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+
+body {
+	background: #464646;
+	font-family: PSans;
+}
+
+@font-face {
+	font-family: PSans;
+	src: url('assets/font/PSans.ttf');
+}
+
+/* icons */
+.md-light {
+	color: white;
+}
+.ico-book {
+	font-size: 38px;
+}
+
+.header {
+	margin: 18px auto;
+	display: inline-flex;
+}
+.header span {
+	font-size: 28px;
+    color: white;
+    padding: 0px 14px;
+}
+.con-card {
+	padding: 15px;
+}
+.cover-card {
+    width: auto;
+    padding: 10px;
+}
+.card {
+	height: 60vw;
+	border-radius: 15px;
+	box-shadow: 0 0 8px 4px #333333;
+	transition: transform .4s ease;
+}
+.card:hover {
+	transform: scale(1.05);
+}
+.cover-card:nth-child(1) .card{
+	background: url(assets/img/ebook_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-card:nth-child(2) .card{
+	background: url(assets/img/ebook_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-card:nth-child(3) .card{
+	background: url(assets/img/ebook_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-card:nth-child(4) .card{
+	background: url(assets/img/ebook_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- HEADER -->
+		<div class="col-md-12 header">
+			<i class="material-icons md-light ico-book">book</i>
+			<span>Ebook :)</span>
+		</div>
+		<!-- //HEADER -->
+
+		<div class="row con-card">
+			<div class="col-6 cover-card">
+				<div class="card"></div>
+			</div>
+			<div class="col-6 cover-card">
+				<div class="card"></div>
+			</div>
+			<div class="col-6 cover-card">
+				<div class="card"></div>
+			</div>
+			<div class="col-6 cover-card">
+				<div class="card"></div>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

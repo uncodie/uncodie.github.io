@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ebook Reader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap v4.5.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- pdf.js 2.6.347 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.entry.min.js" integrity="sha512-NJEHr6hlBM4MkVxJu+7FBk+pn7r+KD8rh+50DPglV/8T8I9ETqHJH0bO7NRPHaPszzYTxBWQztDfL6iJV6CQTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js" integrity="sha512-lHibs5XrZL9hXP3Dhr/d2xJgPy91f2mhVAasrSbMkbmoTSm2Kz8DuSWszBLUg31v+BM6tSiHSqT72xwjaNvl0g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf_viewer.min.css" integrity="sha512-5cOE2Zw/F4SlIUHR/xLTyFLSAR0ezXsra+8azx47gJyQCilATjazEE2hLQmMY7xeAv/RxxZhs8w8zEL7dTsvnA==" crossorigin="anonymous" />
+
+<style>
+
+body {
+	background: #464646;
+	font-family: PSans;
+}
+
+@font-face {
+	font-family: PSans;
+	src: url('assets/font/PSans.ttf');
+}
+
+/* icons */
+.md-light {
+	color: white;
+}
+.ico-book {
+	font-size: 38px;
+}
+
+.header {
+	margin: 18px auto;
+	display: inline-flex;
+}
+.header span {
+	font-size: 28px;
+    color: white;
+    padding: 0px 14px;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- HEADER -->
+		<div class="col-md-12 header">
+			<i class="material-icons md-light ico-book">book</i>
+			<span>Ebook :)</span>
+		</div>
+		<!-- //HEADER -->
+
+		<div class="col-12">
+			<embed src="assets/ebook/ebook_1.pdf" width="150" height="280" type="application/pdf"></embed>
+		</div>
+
+		
+	</div>
+	
+</body>
+</html>
