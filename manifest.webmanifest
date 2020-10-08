@@ -4,7 +4,7 @@
   "description": "Ebook reader",
   "icons": [
     {
-      "src": "ebook/assets/icon/logo_192.png",
+      "src": "ebook/assets/icon/logo_01.png",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -25,14 +25,14 @@
       "short_name": "Ebook Name One",
       "description": "Ebook One Description",
       "url": "/today?source=pwa",
-      "icons": [{ "src": "ebook/assets/icon/logo_192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "ebook/assets/icon/logo_01.png", "sizes": "192x192" }]
     },
     {
       "name": "Ebook Two",
       "short_name": "Ebook Name Two",
       "description": "Ebook Two Description",
       "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "ebook/assets/icon/logo_192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "ebook/assets/icon/logo_01.png", "sizes": "192x192" }]
     }
   ]
 }
