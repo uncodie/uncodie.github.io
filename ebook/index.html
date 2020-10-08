@@ -49,31 +49,31 @@ body {
     width: auto;
     padding: 10px;
 }
-.card {
+.card-ebook {
 	height: 60vw;
 	border-radius: 15px;
-	box-shadow: 0 0 8px 4px #333333;
 	transition: transform .4s ease;
 }
-.card:hover {
+.card-ebook:hover {
 	transform: scale(1.05);
+	box-shadow: 0 0 8px 4px #333333;
 }
-.cover-card:nth-child(1) .card{
+.cover-card:nth-child(1) .card-ebook{
 	background: url(assets/img/ebook_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cover-card:nth-child(2) .card{
+.cover-card:nth-child(2) .card-ebook{
 	background: url(assets/img/ebook_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cover-card:nth-child(3) .card{
+.cover-card:nth-child(3) .card-ebook{
 	background: url(assets/img/ebook_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cover-card:nth-child(4) .card{
+.cover-card:nth-child(4) .card-ebook{
 	background: url(assets/img/ebook_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,16 +94,16 @@ body {
 
 		<div class="row con-card">
 			<div class="col-6 cover-card">
-				<div class="card"></div>
+				<div class="card-ebook" onclick="location.href='ebook_1.html'"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card"></div>
+				<div class="card-ebook"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card"></div>
+				<div class="card-ebook"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card"></div>
+				<div class="card-ebook"></div>
 			</div>
 		</div>
 		
