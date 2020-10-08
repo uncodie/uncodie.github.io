@@ -15,23 +15,23 @@
     }
   ],
   "start_url": "ebook/index.html",
-  "background_color": "#3367D6",
-  "display": "standalone",
+  "background_color": "#464646",
+  "display": "fullscreen",
   "scope": "../",
-  "theme_color": "#3367D6",
+  "theme_color": "#464646",
   "shortcuts": [
     {
       "name": "Ebook One",
       "short_name": "Ebook Name One",
       "description": "Ebook One Description",
-      "url": "/today?source=pwa",
+      "url": "ebook/index.html",
       "icons": [{ "src": "ebook/assets/icon/logo_192.png", "sizes": "192x192" }]
     },
     {
       "name": "Ebook Two",
       "short_name": "Ebook Name Two",
       "description": "Ebook Two Description",
-      "url": "/tomorrow?source=pwa",
+      "url": "ebook/ebook_1.html",
       "icons": [{ "src": "ebook/assets/icon/logo_192.png", "sizes": "192x192" }]
     }
   ]
