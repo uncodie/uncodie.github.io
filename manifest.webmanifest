@@ -1,0 +1,38 @@
+{
+  "short_name": "Ebook",
+  "name": "Ebook: Ebook Reader",
+  "description": "Ebook reader",
+  "icons": [
+    {
+      "src": "ebook/assets/icon/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "ebook/assets/icon/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "ebook/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "ebook",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Ebook One",
+      "short_name": "Ebook Name One",
+      "description": "Ebook One Description",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "ebook/assets/icon/logo-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Ebook Two",
+      "short_name": "Ebook Name Two",
+      "description": "Ebook Two Description",
+      "url": "/tomorrow?source=pwa",
+      "icons": [{ "src": "ebook/assets/icon/logo-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
