@@ -89,6 +89,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.cover-card:nth-child(5) .card-ebook{
+	background: url(assets/img/ebook_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* option */
 .option-con {
@@ -174,6 +179,9 @@ body {
 			<div class="col-6 cover-card">
 				<div class="card-ebook" onclick="showOption('4');"></div>
 			</div>
+			<div class="col-6 cover-card">
+				<div class="card-ebook" onclick="showOption('5');"></div>
+			</div>
 		</div>
 		
 	</div>
@@ -229,6 +237,11 @@ function showOption(option) {
 	{
 		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-four.html'");
 		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-four.html'");
+	}
+	if(option == '5')
+	{
+		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-five.html'");
+		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-five.html'");
 	}
 
 }
