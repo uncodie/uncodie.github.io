@@ -3534,7 +3534,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "assets/ebook/ebook_2.pdf",
+    value: "assets/ebook/ebook_1.pdf",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {

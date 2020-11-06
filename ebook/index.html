@@ -40,6 +40,9 @@ body {
 .ico-book {
 	font-size: 38px;
 }
+#main-con {
+	transition: all 0.5s ease-out;
+}
 
 .header {
 	margin: 18px auto;
@@ -59,7 +62,7 @@ body {
 }
 .card-ebook {
 	height: 60vw;
-	border-radius: 15px;
+	border-radius: 12px;
 	transition: transform .4s ease;
 }
 .card-ebook:hover {
@@ -87,11 +90,69 @@ body {
     background-size: cover;
 }
 
+/* option */
+.option-con {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.option-header {
+	text-align: center;
+    padding: 2vw 10vw;
+    margin: 26vh 6vw -26vh 6vw;
+    background: rgba(0,0,0,.075);
+    border-radius: 2vh;
+    position: initial;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #d6d6d6;
+    box-shadow: 0 0 24px 5px #757575;
+    z-index: 1;
+}
+.option-outter {
+	padding: 10vw;
+    margin: 26vh 6vw;
+    background: #ccc8c9;
+    border-radius: 2vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 24px 5px #757575;
+    z-index: 2;
+}
+.option-card {
+	text-align: center;
+	padding: 0;
+}
+.option-card-icon {
+	margin: 0 auto;
+	background: whitesmoke;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 2vw;
+    text-align: center;
+}
+.option-card-icon:hover {
+	box-shadow: 0 0 7px 1px #a2a2a2;
+}
+.option-icon {
+	height: 10vw;
+    vertical-align: -webkit-baseline-middle;
+    margin-bottom: -3vw;
+}
+.option-txt {
+	font-size: 10px;
+    color: #565656;
+    padding: 2vw;
+}
+
 </style>
 </head>
 <body>
 
-	<div class="container">
+	<div class="container" id="main-con">
 
 		<!-- HEADER -->
 		<div class="col-md-12 header">
@@ -102,20 +163,105 @@ body {
 
 		<div class="row con-card">
 			<div class="col-6 cover-card">
-				<div class="card-ebook" onclick="location.href='ebook_1.html'"></div>
+				<div class="card-ebook" onclick="showOption('1');"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card-ebook"></div>
+				<div class="card-ebook" onclick="showOption('2');"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card-ebook"></div>
+				<div class="card-ebook" onclick="showOption('3');"></div>
 			</div>
 			<div class="col-6 cover-card">
-				<div class="card-ebook"></div>
+				<div class="card-ebook" onclick="showOption('4');"></div>
 			</div>
 		</div>
 		
 	</div>
+
+	<div class="container-fluid option-con">
+
+		<div class="option-header">
+			<div class="col-12">Open Ebook with</div>
+		</div>
+		<div class="row option-outter">
+
+
+			<div class="col-6 option-card" id="option-card-one">
+				<div class="option-card-icon">
+					<img src="assets/icon/google-doc.png" class="option-icon">
+				</div>
+				<div class="option-txt">Google Doc</div>
+			</div>
+			<div class="col-6 option-card" id="option-card-two">
+				<div class="option-card-icon">
+					<img src="assets/icon/pdf-js.png" class="option-icon">
+				</div>
+				<div class="option-txt">PDF JS</div>
+			</div>
+		</div>
+
+	</div>
+
+<script>
+
+function showOption(option) {
+
+	$('#main-con').css({'filter':'blur(15px)'});
+	$('.option-con').css({'display':'block'});
+
+	if(option == '1')
+	{
+		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-one.html'");
+		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-one.html'");
+	}
+	if(option == '2')
+	{
+		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-two.html'");
+		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-two.html'");
+	}
+	if(option == '3')
+	{
+		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-three.html'");
+		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-three.html'");
+	}
+	if(option == '4')
+	{
+		$('#option-card-one').attr("onclick", "location.href='ebook-viewer-one-four.html'");
+		$('#option-card-two').attr("onclick", "location.href='ebook-viewer-two-four.html'");
+	}
+
+}
+
+$('.option-header').on('click',function() {
+
+	$(this).data('clicked', true);
+
+});
+
+$('.option-outter').on('click',function() {
+
+	$(this).data('clicked', true);
+
+});
+
+$('.option-con').on('click',function() {
+
+	if($('.option-header').data('clicked') || $('.option-outter').data('clicked'))
+	{
+		//console.log('visible');
+	}
+	else
+	{
+		$('#main-con').css({'filter':'blur(0px)'});
+		$('.option-con').css({'display':'none'});
+	}
+
+});
+
+
+
+
+</script>
 	
 </body>
 </html>
