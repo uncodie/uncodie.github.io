@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uncodie | Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Uncodie | Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- bootstrap v4.5.2 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- bootstrap v4.5.2 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 <style>
 
 @font-face {
     /* Google Font */
     /*
-    font-family: paytoneOne;
-    src: url('../font/PaytoneOne-Regular.ttf');
+	font-family: paytoneOne;
+	src: url('../font/PaytoneOne-Regular.ttf');
     */
     font-family: PSans;
     src: url('assets/font/PSans.ttf');
@@ -32,22 +32,21 @@
 
 body {
     font-family: PSans;
-    cursor: url('assets/icon/cursor_dot_3.png'), auto;
 }
 
 /* intro */
 .con-intro {
-    height: 100vh;
+	height: 100vh;
     background: #424242;
     padding-left: 7vw;
 }
 .intro-txt {
-    display: grid;
-    padding: 10vh 0vw 10vh 15vw;
+	display: grid;
+	padding: 10vh 0vw 10vh 15vw;
 }
 .intro-font {
-    position: absolute;
-    /* font-family: paytoneOne; */
+	position: absolute;
+	/* font-family: paytoneOne; */
     font-family: PSans;
     font-weight: bold;
     font-size: 9vh;
@@ -90,13 +89,13 @@ body {
     animation: moveElement 4s infinite linear;
 }
 @keyframes moveElement{
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 #circle-one {
-    position: absolute;
+	position: absolute;
     height: 7vh;
     width: 7vh;
     border-radius: 50px;
@@ -106,22 +105,22 @@ body {
     animation: moveCircle 5s infinite ease;
 }
 @keyframes moveCircle {
-    0% {
+	0% {
 
-    }
-    25% {
-        width: 30vh;
-        margin-left: 1vw;
-    }
-    50% {
-        width: 7vh;
-        margin-left: 25.4vh;
-    }
-    75% {
-    }
-    100% {
+	}
+	25% {
+		width: 30vh;
+		margin-left: 1vw;
+	}
+	50% {
+		width: 7vh;
+		margin-left: 25.4vh;
+	}
+	75% {
+	}
+	100% {
 
-    }
+	}
 }
 
 #cross-one {
@@ -146,13 +145,13 @@ body {
     animation: moveCross 4s infinite ease;
 }
 @keyframes moveCross{
-    50% {
-        transform: rotate(320deg);
-    }
+	50% {
+		transform: rotate(320deg);
+	}
 }
 
 #cross-two {
-        --t: 1.3vh;
+	    --t: 1.3vh;
     --l: 11vh;
     --s: 3vh;
     --c1: #673AB7;
@@ -172,13 +171,13 @@ body {
     animation: moveCrossTwo 5s infinite ease;
 }
 @keyframes moveCrossTwo{
-    50% {
-        transform: rotate(-320deg);
-    }
+	50% {
+		transform: rotate(-320deg);
+	}
 }
 
 #circle-two {
-    position: absolute;
+	position: absolute;
     height: 5vh;
     width: 5vh;
     border-radius: 50px;
@@ -188,26 +187,26 @@ body {
     animation: moveCircleTwo 6s infinite ease;
 }
 @keyframes moveCircleTwo {
-    0% {
+	0% {
 
-    }
-    25% {
-        height: 22vh;
-        margin-top: 25vh;
-    }
-    50% {
-        height: 5vh;
-        margin-top: 35.5vh;
-    }
-    75% {
-    }
-    100% {
+	}
+	25% {
+		height: 22vh;
+    	margin-top: 25vh;
+	}
+	50% {
+		height: 5vh;
+    	margin-top: 35.5vh;
+	}
+	75% {
+	}
+	100% {
 
-    }
+	}
 }
 
 #triangle-two {
-    width: 0;
+	width: 0;
     height: 0;
     border-left: 2vh solid transparent;
     border-right: 2vh solid transparent;
@@ -224,12 +223,12 @@ body {
 }
 
 .elem {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 /* profile image */
 #profile {
-    position: fixed;
+	position: fixed;
     width: 20vh;
     margin-left: 76vw;
     margin-top: 46vh;
@@ -314,7 +313,7 @@ body {
     /* padding-bottom: 11px; */
     /* box-shadow: 0 0 1px 0px #3e3e3e; */
     overflow: hidden;
-    cursor: url('assets/icon/cursor_square.png'), auto;
+    cursor: pointer;
     transition: all .4s ease;
 }
 .wrk-div-con:hover {
@@ -376,7 +375,7 @@ body {
 <body>
 
     <!-- INTRO -->
-    <div class="container-fluid con-intro">
+	<div class="container-fluid con-intro">
         <div class="header">
             <img src="assets/img/logo.png" id="header-img">
             <span class="header-txt" id="hdr-txt-one">Uncodie :)</span>
@@ -388,31 +387,31 @@ body {
         </div>
 
 
-        <div class="intro-txt">
-            <font class="intro-font" id="font-one">Web Designs</font>
-            <font class="intro-font" id="font-two">E-Commerce Sites</font>
-            <font class="intro-font" id="font-three">Web Apps</font>
-            <font class="intro-font" id="font-four">Business Card Maker</font>
-            <font class="intro-font" id="font-five">Digital Posters</font>
-            <font class="intro-font" id="font-six">CMS Software</font>
-        </div>
+		<div class="intro-txt">
+			<font class="intro-font" id="font-one">Web Designs</font>
+			<font class="intro-font" id="font-two">E-Commerce Sites</font>
+			<font class="intro-font" id="font-three">Web Apps</font>
+			<font class="intro-font" id="font-four">Business Card Maker</font>
+			<font class="intro-font" id="font-five">Digital Posters</font>
+			<font class="intro-font" id="font-six">CMS Software</font>
+		</div>
 
-        <div class="intro-element">
-            <span class="elem" id="triangle-one"></span>
-            <span class="elem" id="circle-one"></span>
-            <span class="elem" id="cross-one"></span>
-            <span class="elem" id="cross-two"></span>
-            <span class="elem" id="circle-two"></span>
-            <span class="elem" id="triangle-two"></span>
-        </div>
-        <div class="profile-icon">
-            <img src="assets/img/profile.gif" id="profile">
-        </div>
-    </div>
+		<div class="intro-element">
+			<span class="elem" id="triangle-one"></span>
+			<span class="elem" id="circle-one"></span>
+			<span class="elem" id="cross-one"></span>
+			<span class="elem" id="cross-two"></span>
+			<span class="elem" id="circle-two"></span>
+			<span class="elem" id="triangle-two"></span>
+		</div>
+		<div class="profile-icon">
+			<img src="assets/img/profile.gif" id="profile">
+		</div>
+	</div>
     <!-- // INTRO -->
 
     <!-- WORKSHEET -->
-    <div class="container-fluid con-worksheet">
+	<div class="container-fluid con-worksheet">
         <div class="canvas-worksheet col-md-12">
             
             <div class="col-md-3 div-worksheet">
@@ -440,10 +439,10 @@ body {
                 </div>
             </div>
 
-            <div class="col-md-3 div-worksheet" onclick="location.href='flashyball'">
+            <div class="col-md-3 div-worksheet">
                 <div class="wrk-div-con">
-                    <img src="assets/icon/sports_baseball-white-18dp.svg" class="wrk-icon">
-                    <div class="wrk-txt">Flashyball</div>
+                    <img src="assets/icon/fact_check-white-18dp.svg" class="wrk-icon">
+                    <div class="wrk-txt">Portfolio</div>
                 </div>
             </div>
             <div class="col-md-3 div-worksheet">
@@ -466,7 +465,7 @@ body {
             </div>
 
         </div>
-    </div>
+	</div>
     <!-- // WORKSHEET -->
 
 <style>
@@ -515,7 +514,6 @@ body {
     margin: 2vh 0vw;
 }
 .bio-card-small {
-    font-size: 1vw;
     display: inline-block;
     background: #5d5d5d;
     padding: 5vh 1vw;
@@ -524,51 +522,6 @@ body {
     margin-right: 1vw;
 }
 
-/* media queries */
-/* Mobile devices */
-@media (max-width: 575px) {
-     #header-img {
-        width: 12vw;
-    }
-    .header-txt {
-        margin-top: -12vw !important;
-        font-size: 7vw;
-        margin-left: 16vw;
-    }
-    .intro-txt {
-        padding: 10vh 0vw 10vh 8vw;
-    }
-    .intro-font {
-        font-size: 8vw;
-    }
-    #font-one {
-        margin-top: 22vh;
-    }
-    #font-two {
-        margin-top: 28vh;
-    }
-    #font-three {
-        font-size: 13vw;
-        margin-left: -5vw;
-    }
-    #font-five {
-        margin-top: 56vh;
-    }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
 </style>
     <!-- BIO -->
     <div class="container-fluid con-bio">
@@ -576,17 +529,17 @@ body {
             <div class="canvas-container">
                 <div id="bio-name">Aniket Anilkumar Ganvir</div>
                 <div id="bio-contact">
-                    <img src="assets/icon/email-white-18dp.svg" class="bio-contact-ico"> aniket.a.ganvir@gmail.com | 
-                    <img src="assets/icon/call-white-18dp.svg" class="bio-contact-ico"> +91-8766504882
+                    <img src="assets/icon/credit_card-white-18dp.svg" class="bio-contact-ico"> aniket.a.ganvir@gmail.com | 
+                    <img src="assets/icon/center_focus_strong-white-18dp.svg" class="bio-contact-ico"> +91-8766504882
                 </div>
 
                 <div class="col-md-5 bio-info">
-                    <img src="assets/icon/location_on-white-18dp.svg" class="bio-info-ico"> 
+                    <img src="assets/icon/fact_check-white-18dp.svg" class="bio-info-ico"> 
                     Nagpur
                     <span>Current City</span>
                 </div>
                 <div class="col-md-5 bio-info">
-                    <img src="assets/icon/language-white-18dp.svg" class="bio-info-ico"> 
+                    <img src="assets/icon/school-white-18dp.svg" class="bio-info-ico"> 
                     Indian
                     <span>Nationality</span>
                 </div>
@@ -606,8 +559,8 @@ body {
     </div>
     <!-- // BIO -->
 
-    <!-- custom scripts -->
-    <script src="assets/js/script.js"></script>
+	<!-- custom scripts -->
+	<script src="assets/js/script.js"></script>
 
 <script>
     
@@ -617,7 +570,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
 
         var docPos = $(document).scrollTop();
-        if (docPos >= '0' && docPos < '600') {
+        if (docPos >= '0' && docPos < '400') {
             $('#profile').removeClass('profile-next');
             $('#hdr-txt-one').css({'margin-top': '-9vh'});
             $('#hdr-txt-one').css({'opacity': '1'});
@@ -625,7 +578,7 @@ $(document).ready(function(){
             $('#hdr-txt-three').css({'opacity': '0'});
             $('#hdr-txt-four').css({'opacity': '0'});
             $('#hdr-txt-five').css({'opacity': '0'});
-        } else if (docPos >='600' && docPos < '1200') {
+        } else if (docPos >='400' && docPos < '800') {
             $('#profile').addClass('profile-next');
             $('#hdr-txt-one').css({'margin-top': '-17vh'});
             $('#hdr-txt-one').css({'opacity': '0'});
@@ -633,7 +586,7 @@ $(document).ready(function(){
             $('#hdr-txt-three').css({'opacity': '0'});
             $('#hdr-txt-four').css({'opacity': '0'});
             $('#hdr-txt-five').css({'opacity': '0'});
-        } else if (docPos >='1200' && docPos < '1800') {
+        } else if (docPos >='800' && docPos < '1200') {
             $('#profile').addClass('profile-next');
             $('#hdr-txt-one').css({'margin-top': '-24vh'});
             $('#hdr-txt-one').css({'opacity': '0'});
@@ -641,7 +594,7 @@ $(document).ready(function(){
             $('#hdr-txt-three').css({'opacity': '1'});
             $('#hdr-txt-four').css({'opacity': '0'});
             $('#hdr-txt-five').css({'opacity': '0'});
-        } else if (docPos >='1800' && docPos < '2400') {
+        } else if (docPos >='1200' && docPos < '1600') {
             $('#profile').addClass('profile-next');
             $('#hdr-txt-one').css({'margin-top': '-31.5vh'});
             $('#hdr-txt-one').css({'opacity': '0'});
@@ -649,7 +602,7 @@ $(document).ready(function(){
             $('#hdr-txt-three').css({'opacity': '0'});
             $('#hdr-txt-four').css({'opacity': '1'});
             $('#hdr-txt-five').css({'opacity': '0'});
-        } else if (docPos >='2400' && docPos < '3000') {
+        } else if (docPos >='1600' && docPos < '2000') {
             $('#profile').addClass('profile-next');
             $('#hdr-txt-one').css({'margin-top': '-38.5vh'});
             $('#hdr-txt-one').css({'opacity': '0'});
