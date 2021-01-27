@@ -97,3 +97,63 @@ $(document).ready(function(){
 	}, 2000);
 
 });
+
+
+$(document).ready(function(){
+
+    /* on scroll heading visibility */
+    $(window).scroll(function(){
+
+        var docPos = $(document).scrollTop();
+        if (docPos >= '0' && docPos < '600') {
+            $('#profile').removeClass('profile-next');
+            $('#hdr-txt-one').css({'margin-top': '-9vh'});
+            $('#hdr-txt-one').css({'opacity': '1'});
+            $('#hdr-txt-two').css({'opacity': '0'});
+            $('#hdr-txt-three').css({'opacity': '0'});
+            $('#hdr-txt-four').css({'opacity': '0'});
+            $('#hdr-txt-five').css({'opacity': '0'});
+        } else if (docPos >='600' && docPos < '1200') {
+            $('#profile').addClass('profile-next');
+            $('#hdr-txt-one').css({'margin-top': '-17vh'});
+            $('#hdr-txt-one').css({'opacity': '0'});
+            $('#hdr-txt-two').css({'opacity': '1'});
+            $('#hdr-txt-three').css({'opacity': '0'});
+            $('#hdr-txt-four').css({'opacity': '0'});
+            $('#hdr-txt-five').css({'opacity': '0'});
+        } else if (docPos >='1200' && docPos < '1800') {
+            $('#profile').addClass('profile-next');
+            $('#hdr-txt-one').css({'margin-top': '-24vh'});
+            $('#hdr-txt-one').css({'opacity': '0'});
+            $('#hdr-txt-two').css({'opacity': '0'});
+            $('#hdr-txt-three').css({'opacity': '1'});
+            $('#hdr-txt-four').css({'opacity': '0'});
+            $('#hdr-txt-five').css({'opacity': '0'});
+        } else if (docPos >='1800' && docPos < '2400') {
+            $('#profile').addClass('profile-next');
+            $('#hdr-txt-one').css({'margin-top': '-31.5vh'});
+            $('#hdr-txt-one').css({'opacity': '0'});
+            $('#hdr-txt-two').css({'opacity': '0'});
+            $('#hdr-txt-three').css({'opacity': '0'});
+            $('#hdr-txt-four').css({'opacity': '1'});
+            $('#hdr-txt-five').css({'opacity': '0'});
+        } else if (docPos >='2400' && docPos < '3000') {
+            $('#profile').addClass('profile-next');
+            $('#hdr-txt-one').css({'margin-top': '-38.5vh'});
+            $('#hdr-txt-one').css({'opacity': '0'});
+            $('#hdr-txt-two').css({'opacity': '0'});
+            $('#hdr-txt-three').css({'opacity': '0'});
+            $('#hdr-txt-four').css({'opacity': '0'});
+            $('#hdr-txt-five').css({'opacity': '1'});
+        } 
+
+    });
+
+    /* testing scroll position */
+    function sw(){
+        var txt = $(document).scrollTop();
+        $('#txt').html(txt);
+    }
+    setInterval(sw,00000);
+
+});
